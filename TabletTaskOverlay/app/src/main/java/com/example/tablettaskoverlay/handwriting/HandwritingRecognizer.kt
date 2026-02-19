@@ -1,6 +1,6 @@
 package com.example.tablettaskoverlay.handwriting
 
-import com.google.mlkit.vision.digitalink.DigitalInkRecognitionModelManager
+import com.google.mlkit.common.model.RemoteModelManager
 import android.content.Context
 import com.google.mlkit.common.model.DownloadConditions
 import com.google.mlkit.vision.digitalink.DigitalInkRecognition
@@ -20,7 +20,7 @@ class HandwritingRecognizer(context: Context) {
     private val recognizer = DigitalInkRecognition.getClient(
         com.google.mlkit.vision.digitalink.DigitalInkRecognizerOptions.builder(model).build()
     )
-    private val modelManager = DigitalInkRecognitionModelManager.getInstance()
+    private val modelManager = RemoteModelManager.getInstance()
 
     init {
         recognizer
