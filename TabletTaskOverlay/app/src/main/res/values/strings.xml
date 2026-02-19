@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tablet Task Overlay</string>
+    <string name="overlay_channel_name">Overlay Service</string>
+    <string name="reminder_channel_name">Task Reminders</string>
+    <string name="overlay_notification_text">Task overlay is active</string>
+    <string name="morning_reminder_title">Open Tasks Reminder</string>
+    <string name="evening_reminder_title">Evening Task Closure Check</string>
+</resources>
